@@ -3,39 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio - Allan Douglas</title>
+
   <style>
     body {
-      font-family: Arial;
-      background: #0f172a;
+      font-family: 'Segoe UI', Arial;
+      background: linear-gradient(135deg, #0f172a, #020617);
       color: white;
       text-align: center;
       padding: 50px;
     }
 
     h1 {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
+      font-size: 32px;
     }
 
     p {
       color: #cbd5f5;
     }
 
+    .subtitle {
+      font-size: 14px;
+      margin-bottom: 30px;
+      color: #94a3b8;
+    }
+
     .container {
-      margin-top: 40px;
+      margin-top: 30px;
     }
 
     .card {
       background: #1e293b;
-      padding: 20px;
-      margin: 15px auto;
-      width: 300px;
-      border-radius: 10px;
+      padding: 25px;
+      margin: 20px auto;
+      width: 320px;
+      border-radius: 12px;
       transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     .card:hover {
       transform: scale(1.05);
       background: #334155;
+    }
+
+    h3 {
+      margin-bottom: 10px;
     }
 
     a {
@@ -45,11 +58,23 @@
     }
 
     .btn {
-      margin-top: 10px;
+      margin-top: 15px;
       background: #3b82f6;
-      padding: 10px;
-      border-radius: 5px;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
     }
+
+    .btn:hover {
+      background: #2563eb;
+    }
+
+    .highlight {
+      color: #22c55e;
+      font-weight: bold;
+    }
+
   </style>
 </head>
 
@@ -57,25 +82,33 @@
 
   <h1>Portfólio</h1>
   <p>Allan Douglas Carneiro Patricio</p>
+  <p class="subtitle">Desenvolvedor em formação | Projetos práticos com foco em sistemas reais</p>
 
   <div class="container">
 
     <div class="card">
       <h3>SaaS Gestão IPDA</h3>
-      <p>Sistema completo com autenticação e dashboard</p>
-      <a href="https://gestao-ipda-caxias.vercel.app" target="_blank" class="btn">Ver Projeto</a>
+      <p>
+        Sistema completo com autenticação, dashboard, relatórios e controle de dados.<br>
+        <span class="highlight">Acesso em modo DEMO com dados fictícios.</span>
+      </p>
+      <a href="https://gestao-ipda-caxias.vercel.app/dashboard" target="_blank" class="btn">Acessar Demo</a>
     </div>
 
     <div class="card">
       <h3>Loja Online</h3>
-      <p>Simulação de carrinho de compras</p>
-      <a href="https://allan-carneiro.github.io/simulador-loja-online/" target="_blank" class="btn">Ver Projeto</a>
+      <p>
+        Simulação de e-commerce com carrinho de compras e cálculo automático de total.
+      </p>
+      <a href="https://allan-carneiro.github.io/simulador-loja-online/" target="_blank" class="btn">Acessar Projeto</a>
     </div>
 
     <div class="card">
       <h3>Cadastro de Alunos</h3>
-      <p>Sistema de cadastro com CRUD</p>
-      <a href="https://allan-carneiro.github.io/sistema-cadastro-alunos/" target="_blank" class="btn">Ver Projeto</a>
+      <p>
+        Sistema CRUD completo para cadastro, listagem e remoção de alunos.
+      </p>
+      <a href="https://allan-carneiro.github.io/sistema-cadastro-alunos/" target="_blank" class="btn">Acessar Projeto</a>
     </div>
 
   </div>
